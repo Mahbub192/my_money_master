@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master💰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto">
+    <header>
+      <h1 class="text-3xl mt-10 text-center">Money Master💰</h1>
+    </header>
+    <main>
+      <section class="flex mt-10">
+        <div class="w-3/5">
+          <img
+            class="mx-auto"
+            src="img/Pexels Photo by Karolina Grabowska.jpg"
+            alt=""
+          />
+        </div>
+        <div class="w-2/5 bg-[#F8F8F8] pt-10">
+          <h2 class="text-lg font-bold mx-auto text-center">Income</h2>
+          <div class="flex mt-3 w-4/6 mx-auto">
+            <p class="mt-1 w-20 text-right">Income:</p>
+            <input
+              id="income_filed"
+              class="bg-[#DCDCDC] text-base py-1 px-3 rounded ml-5"
+              type="text"
+            />
+          </div>
+          <h2 class="text-lg font-bold mx-auto text-center mt-5">Expenses</h2>
+          <div class="flex mt-3 w-4/6 mx-auto">
+            <p class="mt-1 w-20 text-right">Food:</p>
+            <input
+              id="food_filed"
+              class="bg-[#DCDCDC] text-base py-1 px-3 rounded ml-5"
+              type="text"
+            />
+          </div>
+          <div class="flex mt-3 w-4/6 mx-auto">
+            <p class="mt-1 w-20 text-right">Rent:</p>
+            <input
+              id="rant_field"
+              class="bg-[#DCDCDC] text-base py-1 px-3 rounded ml-5"
+              type="text"
+            />
+          </div>
+          <div class="flex mt-3 w-4/6 mx-auto">
+            <p class="mt-1 w-20 text-right">Clothes:</p>
+            <input
+              id="clothes_filed"
+              class="bg-[#DCDCDC] text-base py-1 px-3 rounded ml-5"
+              type="text"
+            />
+          </div>
+          <div class="text-center mt-5">
+            <button
+              id="calculate_btn"
+              class="bg-blue-300 text-white text-base rounded py-2 px-8"
+            >
+              Calculate
+            </button>
+          </div>
+          <h2 class="text-lg font-bold mx-auto text-center mt-5">
+            Total Expenses: <span id="total_expenses">00</span>
+          </h2>
+          <h2 class="text-lg font-bold mx-auto text-center mt-3">
+            Balance: <span id="balance">00</span>
+          </h2>
+          <div class="flex gap-4 w-3/6 mx-auto mt-5">
+            <p>Save:</p>
+            <input
+              id="percentage_value"
+              class="w-20 bg-[#DCDCDC] px-3"
+              type="text"
+            />
+            <span class="text-base">%</span>
+            <button
+              id="save_btn"
+              class="text-base text-white bg-blue-400 py-1 px-8"
+            >
+              Save
+            </button>
+          </div>
+          <h2 class="text-lg font-bold mx-auto text-center mt-5">
+            Saving Amount: <span id="saving_amount">00</span>
+          </h2>
+          <h2 class="text-lg font-bold mx-auto text-center mt-2">
+            Remaining Balance: <span id="remaining_balance">00</span>
+          </h2>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/js.js"></script>
+  </body>
+</html>
